@@ -9,9 +9,9 @@ export interface SiteConfig {
   author: string
   description?: string
 
-  twitter?: string
-  github?: string
-  linkedin?: string
+  instagram?: string
+  facebook?: string
+  telegram?: string
   zhihu?: string
 
   defaultPageIcon?: string | null

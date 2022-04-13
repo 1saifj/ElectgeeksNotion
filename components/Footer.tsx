@@ -1,9 +1,9 @@
 import * as React from 'react'
 import useDarkMode from '@fisch0920/use-dark-mode'
-import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
-import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
-import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
+import { FaTelegram } from '@react-icons/all-files/fa/FaTelegram'
+import { FaFacebook } from '@react-icons/all-files/fa/FaFacebook'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import * as config from 'lib/config'
@@ -47,15 +47,15 @@ export const FooterImpl: React.FC = () => {
       </div>
 
       <div className={styles.social}>
-        {config.twitter && (
+        {config.instagram && (
           <a
-            className={styles.twitter}
-            href={`https://twitter.com/${config.twitter}`}
-            title={`Twitter @${config.twitter}`}
+            className={styles.instagram}
+            href={`https://instagram.com/${config.instagram}`}
+            title={`Instagram @${config.instagram}`}
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaTwitter />
+            <FaInstagram />
           </a>
         )}
 
@@ -71,27 +71,27 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
-        {config.github && (
+        {config.facebook && (
           <a
-            className={styles.github}
-            href={`https://github.com/${config.github}`}
-            title={`GitHub @${config.github}`}
+            className={styles.facebook}
+            href={`https://facebook.com/${config.facebook}`}
+            title={`Facebook @${config.facebook}`}
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaGithub />
+            <FaFacebook />
           </a>
         )}
 
-        {config.linkedin && (
+        {config.telegram && (
           <a
-            className={styles.linkedin}
-            href={`https://www.linkedin.com/in/${config.linkedin}`}
-            title={`LinkedIn ${config.author}`}
+            className={styles.telegram}
+            href={`https://www.t.me/${config.telegram}`}
+            title={`Telegram ${config.author}`}
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaLinkedin />
+            <FaTelegram />
           </a>
         )}
       </div>
